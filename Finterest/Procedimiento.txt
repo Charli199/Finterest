@@ -1,0 +1,24 @@
+npm init --yes --> Crear un paquete JSON
+npm i express  --> Crear framework de node
+npm i ejs --> Crear modulo para mostrar diferentes vistas para el usuario, ayuda a procesar el html
+npm i fs-extra --> permite crear un file system con caracteristicas modernas de js
+npm i mongoose --> Conecta la base de datos de mongo
+npm i morgan --> Mostrar en cosola lo que recibe el servidor 
+npm i multer --> Para subir la imagenes 
+npm i timeago.js ---> Mostrar fechas
+npm i uuid --> Generar un id aleatorio
+npm i nodemon -D --> Reiniciar solo el servidor
+
+Capertas:
+src - Contiene base de datos y el index de la aplicación
+models - Guardar los modelos
+routes - Rutas del servidor
+views - Guardar las vistas
+
+
+app.set('port',process.env.PORT || 4000); si exite un puerto definido se toma en todo caso si no exite ese puerto utilice el 4000
+
+npx nodemon src/index.js
+_dirname ---> devuelve donde esta la caperta src
+
+res.render('profile', { image }); --> pasar datos de la imagen
